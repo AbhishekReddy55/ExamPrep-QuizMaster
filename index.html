@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamPrep QuizMaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>ExamPrep QuizMaster</h1>
+
+    <!-- Category Selection -->
+    <div id="category-selection">
+      <label for="categories">Choose a category:</label>
+      <select id="categories">
+        <option value="banking">Banking</option>
+        <option value="reasoning">Reasoning</option>
+        <option value="mathematics">Mathematics</option>
+        <option value="general-knowledge">General Knowledge</option>
+      </select>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz" class="hidden">
+      <div id="timer">Time Left: <span id="time">15</span>s</div>
+      <h2 id="question"></h2>
+      <ul id="options"></ul>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p>Your Score: <span id="score"></span></p>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
